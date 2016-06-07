@@ -1,0 +1,29 @@
+{
+    "author": "jcherian14@tamu.edu",
+    "dependencies": {},
+    "keywords": [],
+    "name": "Gestures 3.0",
+    "pebble": {
+        "capabilities": [
+            ""
+        ],
+        "displayName": "Gestures 3.0",
+        "enableMultiJS": false,
+        "messageKeys": {},
+        "projectType": "native",
+        "resources": {
+            "media": []
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "chalk"
+        ],
+        "uuid": "b32d0883-4ed5-445a-a4ea-cac457f48c12",
+        "watchapp": {
+            "watchface": false
+        }
+    },
+    "version": "1.0.0"
+}
