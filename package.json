@@ -1,15 +1,17 @@
 {
-    "author": "jcherian14@tamu.edu",
+    "author": "Pebble",
     "dependencies": {},
     "keywords": [],
-    "name": "Gestures 3.0",
+    "name": "accel-data-stream",
     "pebble": {
         "capabilities": [
             ""
         ],
-        "displayName": "Gestures 3.0",
+        "displayName": "Accel Data Stream",
         "enableMultiJS": false,
-        "messageKeys": {},
+        "messageKeys": {
+            "dummy": 0
+        },
         "projectType": "native",
         "resources": {
             "media": []
@@ -20,7 +22,7 @@
             "basalt",
             "chalk"
         ],
-        "uuid": "b32d0883-4ed5-445a-a4ea-cac457f48c12",
+        "uuid": "bb039a8e-f72f-43fc-85dc-fd2516c7f328",
         "watchapp": {
             "watchface": false
         }
