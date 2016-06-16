@@ -27,7 +27,12 @@ bool comm_send_data(AccelData *data, uint32_t num_samples) {
   if(result == APP_MSG_OK) {
     for(uint32_t i = 0; i < num_samples; i++) {
       DictionaryResult dict_result;
+      APP_LOG(APP_LOG_LEVEL_DEBUG, "Timestamp: %ju", data[i].timestamp);
       dict_result = dict_write_uint32(out, (COMM_NUM_PACKET_ELEMENTS * i) + 0, data[i].timestamp/1000);
+      if(dict_result != DICT_OK) {
+        APP_LOG(APP_LOG_LEVEL_WARNING, "dict_write_int16 failed on item %lu", (long)i);
+      }
+      dict_result = dict_write_uint16(out, (COMM_NUM_PACKET_ELEMENTS * i) + 0, data[i].timestamp%1000);
       if(dict_result != DICT_OK) {
         APP_LOG(APP_LOG_LEVEL_WARNING, "dict_write_int16 failed on item %lu", (long)i);
       }
